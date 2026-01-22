@@ -1,0 +1,259 @@
+@charset "utf-8";
+
+/*
+Author:Kristopher Gonzalez
+Date: 01/22/2026
+Description: Stylesheet for the main layout and design of the website.
+*/
+
+
+body 
+{
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(to bottom, #f4f6f8, #dfe4ea);
+  color: #a8e8ec;
+}
+
+header 
+{
+  background-color: #a3ccf5;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 
+{
+  margin: 0;
+  font-size: 2.5em;
+  font-weight: bold;
+}
+
+
+.nav-list 
+{
+  list-style: none;
+  padding: 0;
+  margin: 15px 0 0;
+
+  display: flex;
+  flex-direction: column; 
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+nav a 
+{
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  padding: 8px 12px;
+  border-radius: 6px;
+  transition: background-color 0.25s ease;
+}
+
+nav a:hover,
+nav a:focus 
+{
+  background-color: #005bb5;
+  color: white;
+}
+
+
+.main-content 
+{
+  padding: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+section 
+{
+  background-color: rgb(13, 2, 71);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(255, 255, 255, 0.582);
+  transition: transform 0.25s ease;
+}
+
+section:hover 
+{
+  transform: scale(1.02);
+}
+
+h2 
+{
+  margin-top: 0;
+  color: #ffffff;
+}
+
+footer 
+{
+  background-color: #003366;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-size: 0.9em;
+  padding: 15px;
+}
+
+
+.projects-table 
+{
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 12px;
+  border: 2px solid gray;
+  background-color: white;
+  color: #0d0247; 
+
+.projects-table caption 
+{
+  caption-side: top;
+  text-align: left;
+  font-weight: bold;
+  padding: 6px 0;
+}
+
+.projects-table th,
+.projects-table td 
+{
+  border: 1px solid gray;
+  padding: 10px;
+  vertical-align: top;
+  text-align: left;
+}
+
+.projects-table thead th 
+{
+  background-color: #a3ccf5;
+  color: #0d0247;
+}
+
+.projects-table tfoot td 
+{
+  font-style: italic;
+}
+
+.projects-table col.highlight-col 
+{
+  background-color: #fff3a6;
+}
+
+.project-img 
+{
+  width: 140px;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 6px;
+  border: 2px solid rgba(0, 0, 0, 0.15);
+}
+
+
+.contact-form 
+{
+  margin-top: 15px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.form-row 
+{
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.contact-form label 
+{
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea 
+{
+  padding: 10px;
+  border-radius: 6px;
+  border: 2px solid rgba(255, 255, 255, 0.35);
+
+  transition: border-color 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus
+{
+  outline: none;
+  border-color: #a3ccf5;
+}
+
+.contact-form input:hover,
+.contact-form textarea:hover 
+{
+  border-color: rgba(163, 204, 245, 0.85);
+}
+
+.submit-btn {
+  padding: 10px 14px;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: #a3ccf5;
+  color: #0d0247;
+
+  transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover,
+.submit-btn:focus 
+{
+  background-color: #005bb5;
+  color: #ffffff;
+}
+
+
+@media (min-width: 600px) 
+{
+  .nav-list 
+  {
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  .main-content 
+  {
+    padding: 30px;
+    gap: 22px;
+  }
+
+  .form-row 
+  {
+    gap: 8px;
+  }
+}
+
+
+@media (min-width: 900px) 
+{
+  .main-content 
+  {
+    padding: 35px;
+    gap: 24px;
+  }
+
+  .contact-form 
+  {
+    max-width: 650px;
+  }
+}
+}

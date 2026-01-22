@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!--
+  Assignment 4.8 ECPI University
+
+  Author: Kristopher Gonzalez
+  Date: 01/22/2026
+  Filename: index.html
+  -->
+  <meta charset="utf-8" />
+  <meta name="description" content="Homepage for showcasing my background, projects, and contact information." />
+  <meta name="keywords" content="student, portfolio, projects, GitHub Pages, HTML" />
+  <meta name="author" content="Kristopher Gonzalez" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Krigon7136 Webpage</title>
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <header>
+    <h1>ECPI University SDC260</h1>
+
+    <nav aria-label="Main">
+      <ul class="nav-list">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="main-content">
+    <section id="about">
+      <header>
+        <h2>About</h2>
+      </header>
+      <p>Hello! My name is Kris and I am learning about HTML from ECPI University.</p>
+    </section>
+
+    <section id="projects">
+      <header>
+        <h2>Projects</h2>
+      </header>
+      <p>Here are two sample projects I am working on.</p>
+
+      <table class="projects-table">
+        <caption>Sample Projects</caption>
+
+        <colgroup>
+          <col class="highlight-col" />
+          <col />
+          <col class="highlight-col" />
+        </colgroup>
+
+        <thead>
+          <tr>
+            <th>Project Name</th>
+            <th>Description</th>
+            <th>Image</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>Primary</td>
+            <td>HTML Code Sample</td>
+            <td>
+              <img src="img1.png" alt="HTML project sample image" class="project-img" />
+            </td>
+          </tr>
+          <tr>
+            <td>Secondary</td>
+            <td>Demonstration of Hovering Effects</td>
+            <td>
+              <img src="img2.png" alt="Hover effects project sample image" class="project-img" />
+            </td>
+          </tr>
+        </tbody>
+
+        <tfoot>
+          <tr>
+            <td colspan="3">More projects will be added soon.</td>
+          </tr>
+        </tfoot>
+      </table>
+    </section>
+
+    <section id="contact">
+      <header>
+        <h2>Contact</h2>
+      </header>
+
+      <p>
+        You can reach me at:
+        <a href="mailto:krigon7136@students.ecpi.edu">krigon7136@students.ecpi.edu</a>
+      </p>
+
+      <form class="contact-form" action="#" method="post" aria-label="Contact form">
+        <div class="form-row">
+          <label for="senderName">Your Name</label>
+          <input type="text" id="senderName" name="senderName" required />
+        </div>
+
+        <div class="form-row">
+          <label for="senderEmail">Email Address</label>
+          <input type="email" id="senderEmail" name="senderEmail" required />
+        </div>
+
+        <div class="form-row">
+          <label for="subject">Subject</label>
+          <input type="text" id="subject" name="subject" />
+        </div>
+
+        <div class="form-row">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5"></textarea>
+        </div>
+
+        <button type="submit" class="submit-btn">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Kristopher Gonzalez</p>
+  </footer>
+</body>
+</html>
