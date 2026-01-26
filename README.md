@@ -19,3 +19,9 @@ A brief description of your project, what it does, and its purpose.
 ## Contact
 
 -Reach me at Krigon7136@students.ecpi.edu
+
+## Local Webpage Screenshot
+
+Here is a screenshot of my locally hosted webpage
+
+[Local Webpage Screenshot](Screenshot 2026-01-26 081352-58.png)
