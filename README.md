@@ -24,4 +24,4 @@ A brief description of your project, what it does, and its purpose.
 
 Here is a screenshot of my locally hosted webpage
 
-![Screenshot](Screenshot 2026-01-26 081352-58.png)
+<img width="1151" height="1237" alt="Screenshot 2026-01-26 081352-58" src="https://github.com/user-attachments/assets/7c774318-24d2-4c12-8419-b9bcaa36145f" />
