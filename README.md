@@ -24,4 +24,4 @@ A brief description of your project, what it does, and its purpose.
 
 Here is a screenshot of my locally hosted webpage
 
-[Local Webpage Screenshot](Screenshot 2026-01-26 081352-58.png)
+![Local Webpage Screenshot](Screenshot 2026-01-26 081352-58.png)
